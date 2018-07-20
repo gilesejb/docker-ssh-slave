@@ -23,7 +23,7 @@
 FROM openjdk:8-jdk
 LABEL MAINTAINER="Nicolas De Loof <nicolas.deloof@gmail.com>"
 
-ARG user=jenkins
+ARG user=bldadm
 ARG group=jenkins
 ARG uid=1000
 ARG gid=1000
@@ -47,7 +47,7 @@ RUN sed -i /etc/ssh/sshd_config \
     mkdir /var/run/sshd
 
 VOLUME "${JENKINS_AGENT_HOME}" "/tmp" "/run" "/var/run"
-WORKDIR "${JENKINS_AGENT_HOME}"
+WORKDIR /var/lib/jenkins
 
 COPY setup-sshd /usr/local/bin/setup-sshd
 
