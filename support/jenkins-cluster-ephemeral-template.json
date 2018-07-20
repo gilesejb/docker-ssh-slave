@@ -101,8 +101,7 @@
                      "git": {
                          "uri": "${GIT_URI}",
                          "ref": "${GIT_REF}"
-                     },
-                     "contextDir": "jenkins-slave"
+                     }
                 },
                 "strategy": {
                     "type": "Docker",
