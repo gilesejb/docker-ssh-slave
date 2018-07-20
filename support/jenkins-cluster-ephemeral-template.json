@@ -27,7 +27,7 @@
 		        "name": "openjdk"
 		    },
 			"spec": {
-				"dockerImageRepository": "library/openjdk:8-jdk"
+				"dockerImageRepository": "oracle/openjdk"
 			}
 		},
         {
@@ -109,7 +109,7 @@
                     "dockerStrategy": {
                         "from": {
                             "kind": "ImageStreamTag",
-                            "name": "openjdk:8-jdk"
+                            "name": "openjdk:8"
                         }
                     }
                 },
