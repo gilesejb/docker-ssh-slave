@@ -109,7 +109,7 @@
                     "dockerStrategy": {
                         "from": {
                             "kind": "ImageStreamTag",
-                            "name": "openjdk:8-jdk"
+                            "name": "openjdk:8"
                         }
                     }
                 },
