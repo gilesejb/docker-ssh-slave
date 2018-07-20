@@ -27,7 +27,7 @@
 		        "name": "openjdk"
 		    },
 			"spec": {
-				"dockerImageRepository": "library/openjdk:8-jdk"
+				"dockerImageRepository": "oracle/openjdk"
 			}
 		},
         {
